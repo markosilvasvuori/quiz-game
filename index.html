@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Quiz Game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div id="game">
+                <header class="game-header">
+                    <h1 class="game-title">Quiz Game</h1>
+                    <div class="scoreboard">
+                        <p class="score-display player1">Player 1: <span class="score"></span> pts</p>
+                        <p class="score-display player2">Player 2: <span class="score"></span> pts</p>
+                    </div>
+                </header>
+
+                <div class="player-selection screen">
+                    <h2 class="screen-title">Select Mode</h2>
+                    <button class="btn">1 Player</button>
+                    <button class="btn">2 Players</button>
+                    <footer class="menu-footer">&copy; Marko Silvasvuori 2021</footer>
+                </div>
+
+                <div class="questions-screen screen">
+                    <h3 class="screen-title turn-title"></h3>
+                    <p class="question"></p>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                    <button class="btn"></button>
+                </div>
+
+                <div class="transition-screen screen">
+                    <h3 class="transition-title"></h3>
+                    <button class="btn reset-btn">Back to menu</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
